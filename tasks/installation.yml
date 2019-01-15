@@ -1,15 +1,17 @@
 ---
 
-- name: install centos scl
+- name: install neccesary packages
   package:
-    name: 'centos-release-scl'
+    name: '{{ item }}'
     state: present
+  register: php_fpm_register_packages_installed
+  until: php_fpm_register_packages_installed is success
+  retries: 3
+  delay: 2
   when: ansible_distribution == 'CentOS'
-
-- name: install php-fpm 7.2
-  package:
-    name: 'rh-php72-php-fpm'
-  when: ansible_distribution == 'CentOS'
+  with_items:
+    - centos-release-scl
+    - rh-php72-php-fpm
 
 - name: start and enable php-fpm service
   service:
