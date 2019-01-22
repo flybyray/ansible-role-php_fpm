@@ -2,5 +2,5 @@
 
 - name: php_fpm restart php-fpm
   service:
-    name: rh-php71-php-fpm.service
+    name: 'rh-php{{ php_fpm_php_version }}-php-fpm'
     state: restarted

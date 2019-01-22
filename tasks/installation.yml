@@ -2,19 +2,15 @@
 
 - name: install neccesary packages
   package:
-    name: '{{ item }}'
+    name: '{{ php_fpm_package_list }}'
     state: present
   register: php_fpm_register_packages_installed
   until: php_fpm_register_packages_installed is success
   retries: 3
   delay: 2
-  when: ansible_distribution == 'CentOS'
-  with_items:
-    - centos-release-scl
-    - rh-php72-php-fpm
 
 - name: start and enable php-fpm service
   service:
-    name: rh-php72-php-fpm.service
+    name: 'rh-php{{ php_fpm_php_version }}-php-fpm'
     state: started
     enabled: true

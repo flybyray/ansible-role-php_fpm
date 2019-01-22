@@ -1,1 +1,4 @@
 ---
+
+# The version of php which will be used
+php_fpm_php_version: 72
