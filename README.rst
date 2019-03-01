@@ -23,7 +23,7 @@ This role has no requirements.
 Role Variables
 ===============
 
-Currently, everything in this role is hardcoded.
+Currently, everything in this role except the php version is hardcoded.
 
 
 Dependencies
