@@ -1,6 +1,6 @@
 ---
 
-- name: install neccesary packages
+- name: install neccesary scl packages
   package:
     name: '{{ php_fpm_scl_package_list }}'
     state: present
