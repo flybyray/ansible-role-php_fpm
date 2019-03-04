@@ -2,6 +2,15 @@
 
 - name: install neccesary packages
   package:
+    name: '{{ php_fpm_scl_package_list }}'
+    state: present
+  register: php_fpm_register_scl_packages_installed
+  until: php_fpm_register_scl_packages_installed is success
+  retries: 3
+  delay: 2
+
+- name: install neccesary packages
+  package:
     name: '{{ php_fpm_package_list }}'
     state: present
   register: php_fpm_register_packages_installed
