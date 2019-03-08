@@ -5,8 +5,8 @@ ROLE PHP_FPM
 .. image:: https://img.shields.io/github/license/adfinis-sygroup/ansible-role-php_fpm.svg?style=flat-square
   :target: https://github.com/adfinis-sygroup/ansible-role-php_fpm/blob/master/LICENSE
 
-.. image:: https://img.shields.io/travis/adfinis-sygroup/ansible-role-php_fpm.svg?style=flat-square
-  :target: https://travis-ci.org/adfinis-sygroup/ansible-role-php_fpm
+.. image:: https://img.shields.io/travis/com/adfinis-sygroup/ansible-role-php_fpm.svg?style=flat-square
+  :target: https://travis-ci.com/adfinis-sygroup/ansible-role-php_fpm
 
 .. image:: https://img.shields.io/badge/galaxy-adfinis--sygroup.php_fpm-660198.svg?style=flat-square
   :target: https://galaxy.ansible.com/adfinis-sygroup/php_fpm
