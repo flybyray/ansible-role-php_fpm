@@ -1,0 +1,7 @@
+---
+
+php_fpm_scl_package_list:
+  - centos-release-scl
+
+php_fpm_package_list:
+  - 'rh-php{{ php_fpm_php_version }}-php-fpm'
