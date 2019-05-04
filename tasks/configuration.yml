@@ -4,5 +4,5 @@
   lineinfile:
     path: '/etc/opt/rh/rh-php{{ php_fpm_php_version }}/php.ini'
     regexp: '^date.timezone( )?='
-    line: 'date.timezone = Europe/Zurich'
+    line: 'date.timezone = Europe/Berlin'
   notify: php_fpm restart php-fpm

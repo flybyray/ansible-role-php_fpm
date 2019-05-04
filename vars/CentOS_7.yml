@@ -5,3 +5,5 @@ php_fpm_scl_package_list:
 
 php_fpm_package_list:
   - 'rh-php{{ php_fpm_php_version }}-php-fpm'
+  - 'rh-php{{ php_fpm_php_version }}-php-mysqlnd'
+  - 'rh-php{{ php_fpm_php_version }}-php-pecl-imagick'
